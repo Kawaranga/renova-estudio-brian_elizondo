@@ -1,0 +1,208 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-image: url(./recursos/house-1477041.jpg);
+    background-size: 100vw 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.headex {
+    width: 100%;
+    background: #94AFD8;
+}
+
+.menu ul {
+    margin: 0;
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.menu li {
+    flex-grow: 1;
+    text-align: center;
+    border: 1px solid #000;
+}
+
+.menu li a {
+    display: block;
+    padding: 20px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu li:hover {
+    background: #a9a5a598;
+}
+
+h1 {
+    margin: 10px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #000;
+    color: #C1C1C1;
+}
+
+form {
+    text-align: center;
+    width: 450px;
+    margin: auto;
+    background: #94afd889;
+    padding: 10px 20px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    border-radius: 7px;
+}
+
+form h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+input, textarea {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 16px;
+    border: none;
+}
+
+textarea {
+    min-height: 100px;
+    max-height: 200px;
+    max-width: 100%;
+
+}
+
+#boton {
+    background: #3b86f6;
+    padding: 20px;
+}
+
+#boton:hover {
+    cursor: pointer;
+}
+
+
+.galeria1 {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+    margin: 5px;
+}
+
+.art {
+    width: 90%;
+    max-width: 1000px;
+    margin: 1.6em auto;
+    background: #94afd85a;
+    display: grid;
+    gap: 1.6em;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+    align-items: center;
+    text-align: center;
+}
+
+.maindex h2 {
+    margin-bottom: 30px;
+}
+
+
+.title-2 {
+    grid-area: 2 / 2 / -2 / -1 ;
+}
+
+.mainq {
+    display: none;
+}
+
+.headerq {
+    background: #94AFD8;
+    display: none;
+}
+
+.headerq nav ul li {
+    display: flex;
+}
+
+.headerq a {
+    text-decoration: none;
+}
+
+#btn-menu {
+    display: none;
+}
+
+.headex {
+    background-color: #94AFD8;
+}
+
+.headex label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 20px 20px;
+}
+
+.headex label:hover {
+    cursor: pointer;
+    background: #a9a5a598
+}
+
+
+@media (max-width:768px) {
+
+.headex label {
+    display: block;
+}
+
+.menu {
+    position: absolute;
+    background: #94AFD8;
+    margin-left: -100%;
+}
+
+.menu ul {
+    flex-direction: column;
+}
+
+#btn-menu:checked ~ .menu {
+    margin: 0;
+}
+
+.maindex img {
+    width: 100%;
+    height: auto;
+}
+
+}
+
+@media (max-width:480px) {
+    form {
+        width: 100%;
+    }
+}
