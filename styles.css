@@ -12,35 +12,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-.headex {
-    width: 100%;
-    background: #94AFD8;
-}
-
-.menu ul {
-    margin: 0;
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
-
-.menu li {
-    flex-grow: 1;
-    text-align: center;
-    border: 1px solid #000;
-}
-
-.menu li a {
-    display: block;
-    padding: 20px;
-    color: #000;
-    text-decoration: none;
-}
-
-.menu li:hover {
-    background: #a9a5a598;
-}
-
 h1 {
     margin: 10px;
     text-align: center;
@@ -127,10 +98,19 @@ textarea {
     text-align: center;
 }
 
+.img-1 {
+    padding: 5px;
+    margin: 5px;
+}
+
+.img-2 {
+    padding: 5px;
+    margin: 5px;
+}
+
 .maindex h2 {
     margin-bottom: 30px;
 }
-
 
 .title-2 {
     grid-area: 2 / 2 / -2 / -1 ;
@@ -140,65 +120,54 @@ textarea {
     display: none;
 }
 
-.headerq {
-    background: #94AFD8;
-    display: none;
+#galera {
+    max-width: 60%;
+    padding-top: 10px;
+    margin: auto;
 }
 
-.headerq nav ul li {
-    display: flex;
-}
-
-.headerq a {
-    text-decoration: none;
-}
-
-#btn-menu {
-    display: none;
-}
-
-.headex {
-    background-color: #94AFD8;
-}
-
-.headex label {
-    display: none;
-    width: 30px;
-    height: 30px;
-    padding: 20px 20px;
-}
-
-.headex label:hover {
-    cursor: pointer;
-    background: #a9a5a598
+#galera p {
+    background-color: #ffffff;
 }
 
 
-@media (max-width:768px) {
-
-.headex label {
-    display: block;
+.nav-link {
+    color:#ffffff;
 }
 
-.menu {
-    position: absolute;
-    background: #94AFD8;
-    margin-left: -100%;
+.nav-link:hover {
+    color: #ffffff;
+    background-color:#3b86f6;
 }
 
-.menu ul {
-    flex-direction: column;
-}
-
-#btn-menu:checked ~ .menu {
+.navbar {
+    padding: 0;
     margin: 0;
 }
+
+.navbar-brand {
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand img {
+    width: 10rem;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+@media (max-width:768px) {
 
 .maindex img {
     width: 100%;
     height: auto;
 }
-
+#galera {
+    max-width: 90%;
+    padding: 5px 5px;
+}
 }
 
 @media (max-width:480px) {
