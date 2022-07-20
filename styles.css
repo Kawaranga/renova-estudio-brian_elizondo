@@ -5,11 +5,22 @@
 }
 
 body {
-    background-image: url(./recursos/house-1477041.jpg);
+    background: #7e7e7e;
     background-size: 100vw 100vh;
     background-attachment: fixed;
     background-size: cover;
     font-family: 'Roboto', sans-serif;
+}
+
+main {
+    padding-bottom: 2em;
+}
+
+footer {
+    width:100%; 
+    position:fixed; 
+    bottom:0; 
+    left:0; 
 }
 
 h1 {
@@ -19,16 +30,6 @@ h1 {
 
 h2 {
     text-align: center;
-}
-
-footer {
-    text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background: #000;
-    color: #C1C1C1;
 }
 
 form {
@@ -74,21 +75,11 @@ textarea {
     cursor: pointer;
 }
 
-
-.galeria1 {
-    max-width: 100%;
-    height: auto;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    padding: 5px;
-    width: 150px;
-    margin: 5px;
-}
-
 .art {
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
+    padding-bottom: 2em;
     background: #94afd85a;
     display: grid;
     gap: 1.6em;
@@ -103,6 +94,7 @@ textarea {
     margin: 5px;
 }
 
+
 .img-2 {
     padding: 5px;
     margin: 5px;
@@ -115,6 +107,12 @@ textarea {
 .title-2 {
     grid-area: 2 / 2 / -2 / -1 ;
 }
+
+.title-4 {
+    grid-area: 4 / 2 / 5 / -1 ;
+}
+
+
 
 .mainq {
     display: none;
@@ -158,6 +156,32 @@ textarea {
     padding: 0;
 }
 
+#galeria .col-lg-4 {
+    margin: 0;
+    padding: 25px;
+}
+
+#galeria img {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 200px;
+}
+
+#galeria img:hover {
+    border: 10px solid #7e7e7e;
+}
+
+.container-m {
+    padding-top: 2em;
+}
+
+.container-m:hover {
+    opacity: 1;
+	-webkit-animation: flash 1.5s;
+	animation: flash 1.5s;
+}
+
 @media (max-width:768px) {
 
 .maindex img {
@@ -168,10 +192,32 @@ textarea {
     max-width: 90%;
     padding: 5px 5px;
 }
+
+.art {
+    padding: 10px 10px;
+}
+
 }
 
 @media (max-width:480px) {
     form {
         width: 100%;
     }
+}
+
+@-webkit-keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
 }
