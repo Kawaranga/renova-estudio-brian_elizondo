@@ -2,6 +2,28 @@
   margin: 0;
   padding: 0; }
 
+/*map*/
+/* EXTRA */
+.button, .prueba1, .prueba2 {
+  margin-left: 10px;
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 22px;
+  box-shadow: 2px 2px 10px #000; }
+  .button:hover, .prueba1:hover, .prueba2:hover {
+    background: #7e7e7e; }
+
+.prueba1 {
+  background: #3b86f6;
+  border-radius: 30px; }
+
+.prueba2 {
+  background: #ff0000;
+  border-radius: 10px;
+  border-style: inset; }
+
+/*EXTRA*/
 body {
   background: #7e7e7e;
   background-size: 100vw 100vh;
@@ -12,18 +34,14 @@ body {
 main {
   padding-bottom: 2em; }
 
-footer {
-  width: 100%;
-  position: fixed;
-  bottom: 0;
-  left: 0; }
-
 h1 {
   margin: 10px;
   text-align: center; }
 
+/*agregado map*/
 h2 {
-  text-align: center; }
+  text-align: center;
+  color: #ff0000; }
 
 form {
   text-align: center;
@@ -99,7 +117,8 @@ textarea {
   padding-top: 10px;
   margin: auto; }
   #galera p {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    color: #3b86f6; }
 
 .nav-link {
   color: #ffffff; }

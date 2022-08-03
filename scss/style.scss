@@ -3,6 +3,47 @@
     padding: 0;
 }
 
+/*map*/
+$colores: (
+    primario: #ff0000,
+    secundario: #888
+);
+
+@function color($color) {
+    @return map-get($colores, $color);
+}
+
+@mixin font-color(){
+    color: #3b86f6;
+}
+
+/* EXTRA */
+.button {
+    margin-left: 10px;
+    border: none;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 22px;
+    box-shadow: 2px 2px 10px #000;
+    &:hover {
+        background: #7e7e7e
+    }
+}
+
+.prueba1 {
+    @extend .button;
+    background: #3b86f6;
+    border-radius: 30px;
+}
+
+.prueba2 {
+    @extend .button;
+    background: #ff0000;
+    border-radius: 10px;
+    border-style: inset;
+}
+/*EXTRA*/
+
 body {
     background: #7e7e7e;
     background-size: 100vw 100vh;
@@ -16,10 +57,7 @@ main {
 }
 
 footer {
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
+
 }
 
 h1 {
@@ -27,8 +65,10 @@ h1 {
     text-align: center;
 }
 
+/*agregado map*/
 h2 {
     text-align: center;
+    color: color(primario);
 }
 
 form {
@@ -121,6 +161,7 @@ textarea {
 
     p {
     background-color: #ffffff;
+    @include font-color();
     }
 }
 
@@ -194,6 +235,8 @@ textarea {
     padding: 10px 10px;
     }
 }
+
+
 
 @media (max-width: 480px) {
     form {
