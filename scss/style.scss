@@ -3,49 +3,9 @@
     padding: 0;
 }
 
-/*map*/
-$colores: (
-    primario: #ff0000,
-    secundario: #888
-);
-
-@function color($color) {
-    @return map-get($colores, $color);
-}
-
-@mixin font-color(){
-    color: #3b86f6;
-}
-
-/* EXTRA */
-.button {
-    margin-left: 10px;
-    border: none;
-    padding: 15px 30px;
-    text-align: center;
-    font-size: 22px;
-    box-shadow: 2px 2px 10px #000;
-    &:hover {
-        background: #7e7e7e
-    }
-}
-
-.prueba1 {
-    @extend .button;
-    background: #3b86f6;
-    border-radius: 30px;
-}
-
-.prueba2 {
-    @extend .button;
-    background: #ff0000;
-    border-radius: 10px;
-    border-style: inset;
-}
-/*EXTRA*/
-
 body {
-    background: #7e7e7e;
+    background: rgb(194,194,194);
+    background: radial-gradient(circle, rgba(194,194,194,1) 0%, rgba(45,45,45,1) 100%);
     background-size: 100vw 100vh;
     background-attachment: fixed;
     background-size: cover;
@@ -56,19 +16,14 @@ main {
     padding-bottom: 2em;
 }
 
-footer {
-
-}
-
 h1 {
     margin: 10px;
     text-align: center;
 }
 
-/*agregado map*/
+
 h2 {
     text-align: center;
-    color: color(primario);
 }
 
 form {
@@ -124,7 +79,7 @@ textarea {
     max-width: 1000px;
     margin: 1.6em auto;
     padding-bottom: 2em;
-    background: #94afd85a;
+    background: #a7caf16d;
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(2, 1fr);
@@ -161,7 +116,6 @@ textarea {
 
     p {
     background-color: #ffffff;
-    @include font-color();
     }
 }
 
@@ -208,7 +162,23 @@ textarea {
         border: 10px solid #7e7e7e;
     }
     }
+
+    h3 {
+        text-align: center;
+        text-decoration: none;
+        color: #000;
+        
+        &:hover {
+            font-weight: bolder;
+        }
+    }
+
+    a {
+        text-decoration: none;
+    }
 }
+
+
 
 .container-m {
     padding-top: 2em;
@@ -219,6 +189,23 @@ textarea {
     animation: flash 1.5s;
     }
 }
+
+.about {
+    h1 {
+        text-align: center;
+    }
+    p {
+        margin-left: 20%;
+        margin-right: 20%;
+        text-align: center;
+        padding-top: 50px;
+        font-size: large;
+    }
+    .card-group {
+        padding-top: 100px;
+    }
+}
+
 
 @media (max-width: 768px) {
     .maindex img {

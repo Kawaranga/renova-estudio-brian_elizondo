@@ -2,30 +2,9 @@
   margin: 0;
   padding: 0; }
 
-/*map*/
-/* EXTRA */
-.button, .prueba1, .prueba2 {
-  margin-left: 10px;
-  border: none;
-  padding: 15px 30px;
-  text-align: center;
-  font-size: 22px;
-  box-shadow: 2px 2px 10px #000; }
-  .button:hover, .prueba1:hover, .prueba2:hover {
-    background: #7e7e7e; }
-
-.prueba1 {
-  background: #3b86f6;
-  border-radius: 30px; }
-
-.prueba2 {
-  background: #ff0000;
-  border-radius: 10px;
-  border-style: inset; }
-
-/*EXTRA*/
 body {
-  background: #7e7e7e;
+  background: #c2c2c2;
+  background: radial-gradient(circle, #c2c2c2 0%, #2d2d2d 100%);
   background-size: 100vw 100vh;
   background-attachment: fixed;
   background-size: cover;
@@ -38,10 +17,8 @@ h1 {
   margin: 10px;
   text-align: center; }
 
-/*agregado map*/
 h2 {
-  text-align: center;
-  color: #ff0000; }
+  text-align: center; }
 
 form {
   text-align: center;
@@ -88,7 +65,7 @@ textarea {
   max-width: 1000px;
   margin: 1.6em auto;
   padding-bottom: 2em;
-  background: #94afd85a;
+  background: #a7caf16d;
   display: grid;
   gap: 1.6em;
   grid-template-columns: repeat(2, 1fr);
@@ -117,8 +94,7 @@ textarea {
   padding-top: 10px;
   margin: auto; }
   #galera p {
-    background-color: #ffffff;
-    color: #3b86f6; }
+    background-color: #ffffff; }
 
 .nav-link {
   color: #ffffff; }
@@ -151,12 +127,35 @@ textarea {
   #galeria img:hover {
     border: 10px solid #7e7e7e; }
 
+#galeria h3 {
+  text-align: center;
+  text-decoration: none;
+  color: #000; }
+  #galeria h3:hover {
+    font-weight: bolder; }
+
+#galeria a {
+  text-decoration: none; }
+
 .container-m {
   padding-top: 2em; }
   .container-m:hover {
     opacity: 1;
     -webkit-animation: flash 1.5s;
     animation: flash 1.5s; }
+
+.about h1 {
+  text-align: center; }
+
+.about p {
+  margin-left: 20%;
+  margin-right: 20%;
+  text-align: center;
+  padding-top: 50px;
+  font-size: large; }
+
+.about .card-group {
+  padding-top: 100px; }
 
 @media (max-width: 768px) {
   .maindex img {
