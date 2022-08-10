@@ -207,6 +207,8 @@ footer img {
     padding-bottom: 0; }
   footer {
     position: relative; }
+    footer img {
+      margin-right: 0; }
   .footer_container {
     width: 100%;
     display: flex;
