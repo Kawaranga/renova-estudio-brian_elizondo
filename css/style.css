@@ -6,12 +6,16 @@ body {
   background: #c2c2c2;
   background: radial-gradient(circle, #c2c2c2 0%, #2d2d2d 100%);
   background-size: 100vw 100vh;
-  background-attachment: fixed;
-  background-size: cover;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  min-height: 100%;
+  position: relative;
+  margin: 0;
+  padding-bottom: 6rem; }
 
 main {
-  padding-bottom: 2em; }
+  position: relative;
+  margin: 0;
+  padding-bottom: 2rem; }
 
 h1 {
   margin: 10px;
@@ -86,9 +90,6 @@ textarea {
 .title-4 {
   grid-area: 4 / 2 / 5 / -1; }
 
-.mainq {
-  display: none; }
-
 #galera {
   max-width: 60%;
   padding-top: 10px;
@@ -154,8 +155,63 @@ textarea {
   padding-top: 50px;
   font-size: large; }
 
-.about .card-group {
-  padding-top: 100px; }
+footer {
+  background: #4e4f50;
+  padding-top: 10px;
+  position: absolute;
+  bottom: 0;
+  width: 100%; }
+  footer li {
+    list-style-type: none;
+    color: #ffffff; }
+
+footer img {
+  height: 5rem;
+  margin-right: 50px; }
+
+.footer_container {
+  max-width: 1300px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse; }
+
+.wsp:hover {
+  color: #25D366; }
+
+.insta:hover {
+  color: #C13584; }
+
+.linkedin:hover {
+  color: #40a1e6; }
+
+.fab {
+  margin-right: 20px;
+  margin-left: 20px; }
+
+.social_media {
+  margin: 20px 150px; }
+  .social_media a {
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .6s; }
+
+@media (max-width: 1045px) {
+  .social_media {
+    display: flex;
+    padding: 0 0; }
+  body {
+    padding-bottom: 0; }
+  footer {
+    position: relative; }
+  .footer_container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; } }
 
 @media (max-width: 768px) {
   .maindex img {
