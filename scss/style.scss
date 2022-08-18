@@ -75,7 +75,6 @@ textarea {
 
 .art {
     background: #BDBDBD;
-    border: 10px groove #A2A2A2;
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
@@ -169,12 +168,12 @@ textarea {
 
 .container-m {
     padding-top: 2em; 
+
+    video {
+        width: 100%;
+    }
 }
-    .container-m:hover {
-    opacity: 1;
-    -webkit-animation: flash 1.5s;
-    animation: flash 1.5s; 
-}
+
 
 .about h1 {
     text-align: center; 
@@ -265,10 +264,11 @@ footer img {
 }
 
 @media (max-width: 768px) {
-    .maindex img {
+    .maindex img{
     width: 100%;
     height: auto; 
     }
+    
     #galera {
     max-width: 90%;
     padding: 5px 5px; 

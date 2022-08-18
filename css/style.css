@@ -67,7 +67,6 @@ textarea {
 
 .art {
   background: #BDBDBD;
-  border: 10px groove #A2A2A2;
   width: 90%;
   max-width: 1000px;
   margin: 1.6em auto;
@@ -147,11 +146,8 @@ textarea {
 
 .container-m {
   padding-top: 2em; }
-
-.container-m:hover {
-  opacity: 1;
-  -webkit-animation: flash 1.5s;
-  animation: flash 1.5s; }
+  .container-m video {
+    width: 100%; }
 
 .about h1 {
   text-align: center; }
