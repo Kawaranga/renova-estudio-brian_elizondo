@@ -85,6 +85,11 @@ textarea {
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
     text-align: center; 
+
+    p {
+        margin-left: 20px;
+        margin-right: 30px;
+    }
 }
 
 .img-1, .img-2 {
