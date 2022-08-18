@@ -1,33 +1,29 @@
 * {
     margin: 0;
-    padding: 0;
-}
+    padding: 0; }
 
 body {
-    background: rgb(194,194,194);
-    background: radial-gradient(circle, rgba(194,194,194,1) 0%, rgba(45,45,45,1) 100%);
     background-size: 100vw 100vh;
     font-family: 'Roboto', sans-serif;
     min-height: 100%;
     position: relative;
     margin: 0;
-    padding-bottom: 6rem;
+    padding-bottom: 6rem; 
 }
 
 main {
     position: relative;
     margin: 0;
-    padding-bottom: 2rem;
+    padding-bottom: 2rem; 
 }
 
 h1 {
     margin: 10px;
-    text-align: center;
+    text-align: center; 
 }
 
-
 h2 {
-    text-align: center;
+    text-align: center; 
 }
 
 form {
@@ -38,14 +34,14 @@ form {
     padding: 10px 20px;
     box-sizing: border-box;
     margin-top: 20px;
-    border-radius: 7px;
-
-    h2 {
+    margin-bottom: 10px;
+    border-radius: 7px; 
+}
+    form h2 {
     text-align: center;
     margin: 0;
     font-size: 30px;
-    margin-bottom: 30px;
-    }
+    margin-bottom: 30px; 
 }
 
 input {
@@ -54,7 +50,7 @@ input {
     padding: 7px;
     box-sizing: border-box;
     font-size: 16px;
-    border: none;
+    border: none; 
 }
 
 textarea {
@@ -66,141 +62,130 @@ textarea {
     border: none;
     min-height: 100px;
     max-height: 200px;
-    max-width: 100%;
+    max-width: 100%; 
 }
 
 #boton {
     background: #3b86f6;
-    padding: 20px;
-
-    &:hover {
-    cursor: pointer;
-    }
+    padding: 20px; 
+}
+    #boton:hover {
+    cursor: pointer; 
 }
 
 .art {
+    background: #BDBDBD;
+    border: 10px groove #A2A2A2;
     width: 90%;
     max-width: 1000px;
     margin: 1.6em auto;
     padding-bottom: 2em;
-    background: #a7caf16d;
     display: grid;
     gap: 1.6em;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     align-items: center;
-    text-align: center;
+    text-align: center; 
 }
 
 .img-1, .img-2 {
     padding: 5px;
-    margin: 5px;
+    margin: 5px; 
 }
 
 .maindex h2 {
-    margin-bottom: 30px;
+    margin-bottom: 30px; 
 }
 
 .title-2 {
-    grid-area: 2 / 2 / -2 / -1;
+    grid-area: 2 / 2 / -2 / -1; 
 }
 
 .title-4 {
-    grid-area: 4 / 2 / 5 / -1;
+    grid-area: 4 / 2 / 5 / -1; 
 }
 
 #galera {
     max-width: 60%;
     padding-top: 10px;
-    margin: auto;
-
-    p {
-    background-color: #ffffff;
-    }
+    margin: auto; 
+}
+    #galera p {
+    background-color: #ffffff; 
 }
 
 .nav-link {
+    color: #ffffff; 
+}
+    .nav-link:hover {
     color: #ffffff;
-
-    &:hover {
-    color: #ffffff;
-    background-color: #3b86f6;
-    }
+    background-color: #3b86f6; 
 }
 
 .navbar {
     padding: 0;
-    margin: 0;
+    margin: 0; 
 }
 
 .navbar-brand {
     padding: 0;
-    margin: 0;
-
-    img {
-    width: 10rem;
-    }
+    margin: 0; 
+}
+    .navbar-brand img {
+    width: 10rem; 
 }
 
 .container-fluid {
-    padding: 0;
+    padding: 0; 
 }
 
-#galeria {
-    .col-lg-4 {
+#galeria .col-lg-4 {
     margin: 0;
-    padding: 25px;
-    }
+    padding: 25px; 
+}
 
-    img {
+#galeria img {
     display: block;
     margin-right: auto;
     margin-left: auto;
-    height: 200px;
-
-    &:hover {
-        border: 10px solid #7e7e7e;
-    }
-    }
-
-    h3 {
-        text-align: center;
-        text-decoration: none;
-        color: #000;
-        
-        &:hover {
-            font-weight: bolder;
-        }
-    }
-
-    a {
-        text-decoration: none;
-    }
+    height: 200px; 
+}
+    #galeria img:hover {
+    border: 10px solid #7e7e7e; 
 }
 
+#galeria h3 {
+    text-align: center;
+    text-decoration: none;
+    color: #000; 
+}
+    #galeria h3:hover {
+    font-weight: bolder; 
+}
 
+#galeria a {
+    text-decoration: none; 
+}
 
 .container-m {
-    padding-top: 2em;
-
-    &:hover {
+    padding-top: 2em; 
+}
+    .container-m:hover {
     opacity: 1;
     -webkit-animation: flash 1.5s;
-    animation: flash 1.5s;
-    }
+    animation: flash 1.5s; 
 }
 
-.about {
-    h1 {
-        text-align: center;
-    }
-    p {
-        margin-left: 20%;
-        margin-right: 20%;
-        text-align: center;
-        padding-top: 50px;
-        font-size: large;
-    }
+.about h1 {
+    text-align: center; 
+}
+
+.about p {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    padding-top: 50px;
+    font-size: large; 
 }
 
 footer {
@@ -208,17 +193,16 @@ footer {
     padding-top: 10px;
     position: absolute;
     bottom: 0;
-    width: 100%;
-
-    li {
-        list-style-type: none;
-        color: #ffffff;
-    }
+    width: 100%; 
+}
+    footer li {
+    list-style-type: none;
+    color: #ffffff; 
 }
 
 footer img {
     height: 5rem;
-    margin-right: 50px;
+    margin-right: 50px; 
 }
 
 .footer_container {
@@ -228,109 +212,93 @@ footer img {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap-reverse; 
 }
 
 .wsp:hover {
-    color: #25D366;
+    color: #25D366; 
 }
 
 .insta:hover {
-    color: #C13584;
+    color: #C13584; 
 }
 
 .linkedin:hover {
-    color: #40a1e6;
+    color: #40a1e6; 
 }
-
 
 .fab {
     margin-right: 20px;
-    margin-left: 20px;
+    margin-left: 20px; 
 }
 
 .social_media {
-    margin: 20px 150px;
-
-    a {
+    margin: 20px 150px; 
+}
+    .social_media a {
     color: #000;
     font-size: 24px;
     text-decoration: none;
-    transition: .6s;
-    }
-    
+    transition: .6s; 
 }
 
-@media (max-width: 1045px) {
-
+@media (max-width: 1024px) {
     .social_media {
-        display: flex;
-        padding: 0 0;
+    display: flex;
+    padding: 0 0; 
     }
-
     body {
-        padding-bottom: 0
+    padding-bottom: 0; 
     }
-
     footer {
-        position: relative;
-
-        img {
-            margin-right: 0;
-        }
+    position: relative; 
     }
-
+    footer img {
+    margin-right: 0; 
+    }
     .footer_container {
-        width: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     }
 }
-
 
 @media (max-width: 768px) {
     .maindex img {
     width: 100%;
-    height: auto;
+    height: auto; 
     }
-
     #galera {
     max-width: 90%;
-    padding: 5px 5px;
+    padding: 5px 5px; 
     }
-
     .art {
-    padding: 10px 10px;
-    }
+    padding: 10px 10px; 
+    } 
 }
-
-
 
 @media (max-width: 480px) {
     form {
-    width: 100%;
+        width: 90%;
     }
 }
-
 
 
 @-webkit-keyframes flash {
     0% {
-    opacity: .4;
+    opacity: .4; 
     }
-
     100% {
-    opacity: 1;
-    }
+opacity: 1; 
+    } 
 }
 
 @keyframes flash {
     0% {
-    opacity: .4;
+    opacity: .4; 
     }
-
     100% {
-    opacity: 1;
-    }
+    opacity: 1; 
+    } 
 }
