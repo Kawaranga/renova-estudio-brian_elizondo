@@ -26,7 +26,7 @@ form {
   text-align: center;
   width: 450px;
   margin: auto;
-  background: #94afd889;
+  background: #5e5e5e89;
   padding: 10px 20px;
   box-sizing: border-box;
   margin-top: 20px;
@@ -190,7 +190,10 @@ footer img {
   color: #25D366; }
 
 .insta:hover {
-  color: #C13584; }
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; }
 
 .linkedin:hover {
   color: #40a1e6; }
@@ -224,6 +227,9 @@ footer img {
     align-items: center;
     justify-content: center; } }
 
+.sect {
+  display: none; }
+
 @media (max-width: 768px) {
   .maindex img {
     width: 100%;
@@ -236,7 +242,9 @@ footer img {
 
 @media (max-width: 480px) {
   form {
-    width: 90%; } }
+    width: 90%; }
+  .art {
+    display: block; } }
 
 @-webkit-keyframes flash {
   0% {
