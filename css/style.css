@@ -94,6 +94,8 @@ textarea {
     border-radius: 5px;
     max-height: 300px;
     max-width: 400px; }
+  .art h4 {
+    padding-top: 15px; }
 
 .maindex h2 {
   margin-bottom: 30px; }
@@ -236,10 +238,12 @@ footer img {
         max-height: 300px;
         max-width: 400px; }
 
+/*fix lote590*/
 .li590 {
   padding-bottom: 130px;
   padding-top: 130px; }
 
+/*hover galeria*/
 .image {
   position: relative;
   object-fit: cover;
@@ -276,9 +280,8 @@ footer img {
 
 .image__overlay:hover {
   opacity: 1; }
-
-.image__overlay:hover > * {
-  transform: translateY(0); }
+  .image__overlay:hover > * {
+    transform: translateY(0); }
 
 .image__title {
   font-size: 2em;
